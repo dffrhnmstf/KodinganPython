@@ -8,4 +8,14 @@ print(rata_rata)
 
 # SOAL 2 - Menulis kelipatan bilangan
 # Tuliskan program untuk Soal 2 di bawah ini
-print(5, 10, 15, 20, 25, sep="---")
+n1 = int(input("masukkan bilangan minimum :"))
+n2 = int(input("masukkan bilangan maksimum :"))
+y = int(input("masukkan bilangan kelipatan :"))
+jumlah = []
+
+while n1 <= n2:
+  if(n1 % y) == 0:
+    print(n1)
+    jumlah.append(n1)
+  n1 += 1
+print("jumlah :", len(jumlah))
